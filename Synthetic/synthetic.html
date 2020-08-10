@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+     button {
+    display: block;
+    margin: 20px 0 0 0;
+    }
+
+textarea {
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    float: left;
+    font-size: 18px;
+  }
+  p {
+    clear: left;
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+    margin: 5px 10px 0 10px;
+    padding: 2px;
+  }
+  .w3r_font_color{
+  color: red;
+    }
+  p.q9{
+  }
+  p.q11 {
+  background-color: #B0E0E6;
+  width: 70px;
+  border: 1px solid red;
+    }
+
+  .q1,.q2,.q3,.q4,.q5,.q6,.q7,.q8,.q9,.q10,.q11,.q12,.q13,.q14,.q15{}
+
+</style>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Synthetic</title>
+</head>
+<body>
+<h3>Question 1: Using jQuery find all textareas and all paragraphs, and make them a border</h3>
+<h3>Answer:</h3>
+
+<textarea class="q1">jQuery</textarea>
+<textarea class="q1">JavaScript</textarea>
+<p class="q1">jQuery</p>
+<p class="q1">JavaScript</p>
+<button id="button1">Question 1</button>
+<script>
+$('#button1').click(function(){
+    $( "textarea.q1" ).css( "border", "2px solid red" ).add( "p.q1" ).css( "border", "2px solid red" );
+});
+</script>
+<br>
+<h3>Question 2:Create a paragraph element with some text and append it to the end of the document body using jQuery</h3>
+<h3>Answer:</h3>
+<p class="q2">check the end of file</p>
+<button id="button2">Question 2</button>
+<script>
+$("#button2").click(function(){
+            $("body").append("<p>Adding some text for question 2</p>");
+        });
+</script>
+<br>
+<h3>Question 3:Using jQuery add the class ” w3r_font_color” to the last paragraph element.</h3>
+<h3>Answer:</h3>
+<p class="q3">PHP</p>
+<p class="q3">Java</p>
+<p class="q3">Python</p>
+
+<button id="button3">Question 3</button>
+<script>
+$('#button3').click(function(){
+    $( "p.q3" ).last().addClass( "w3r_font_color" );
+});
+</script>
+<br>
+<h3>Question 4:Using jQuery insert some HTML after all paragraphs.</h3>
+<h3>Answer:</h3>
+<p class="q4">PHP</p>
+<p class="q4">Java</p>
+<p class="q4">Python</p>
+
+<button id="button4">Question 4</button>
+<script>
+$('#button4').click(function(){
+    $( "p.q4" ).after( "<b>With solution.</b>" );
+});
+
+
+
+
+</script>
+<h3>Question 5:Insert a jQuery object after all paragraphs.</h3>
+<h3>Answer:</h3>
+<b class="q5">Hello</b>
+<p class="q5">I would like to say: </p>
+
+<button id="button5">Question 5</button>
+<script>
+$('#button5').click(function(){
+    $( "p.q5" ).after( $("b.q5") );
+});
+</script>
+
+
+
+
+<h3>Question 6:Register a handler to be called when Ajax requests complete successfully..</h3>
+<h3>Answer:</h3>
+<div class="q6"></div>
+<p class="q6"></p>
+<button id="button6">Question 6</button>
+<script>
+$(document).ajaxSuccess(function(){
+    $("p.q6").text("Success!");
+});
+$("#button6").click(function(){
+    $("div.q6").load("ajax.txt");
+});
+</script>
+
+
+
+
+<h3>Question 7:Register a handler to be called when Ajax requests complete with an error.</h3>
+<h3>Answer:</h3>
+<div class="q7"></div>
+<p class="q7"></p>
+<button id="button7">Question 7</button>
+<script>
+$(document).ajaxError(function(){
+    $("p.q7").text("Error!");
+});
+$("#button7").click(function(){
+    $("div.q7").load("a.txt");
+});
+</script>
+
+
+<h3>Question 8:Register a handler to be called when all Ajax requests have completed.</h3>
+<h3>Answer:</h3>
+<div class="q8"></div>
+<p class="q8"></p>
+<button id="button8">Question 8</button>
+<script>
+$(document).ajaxComplete(function(){
+    $("p.q8").text("Complete!");
+});
+$("#button8").click(function(){
+    $("div.q8").load("bjax.txt");
+});
+</script>
+
+
+
+<h3>Question 9:Using jQuery count every element (including head, body, etc.) in the document.</h3>
+<h3>Answer:</h3>
+<p class="q9"></p>
+<button id="button9">Question 9</button>
+<script>
+
+$('#button9').click(function(){
+
+var elementCount = $( "*" ).css( "border", "3px solid blue" ).length;
+$( "p.q9" ).prepend( "<h3>" + elementCount + " elements found</h2>" );
+});
+</script>
+<h3>Question 10:Using jQuery count all elements within a division.</h3>
+<h3>Answer:</h3>
+<p class="q10"></p>
+<div class="q10">
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+        <div>This is just a <em>block of text</em>.</div>
+        <ul>
+            <li>An item of an unordered list</li>
+            <li>Another item of an unordered list</li>
+        </ul>
+    </div>
+<button id="button10">Question 10</button>
+<script>
+$('#button10').click(function(){
+  var elementCount = $( "div.q10" ).find( "*" ).css( "border", "2px solid blue" ).length;
+  $( "p.q10" ).prepend( "" + elementCount + " element(s) found" );
+});
+</script>
+<h3>Question 11:Using jQuery click the button to animate the paragraph element with a number of different properties.</h3>
+<h3>Answer:</h3>
+<p id="pid" class="q11">jQuery</p>
+<button id="button11">Question 11</button>
+<script>
+
+$('#button11').click(function(){
+$( "#pid" ).animate({
+    width: "70%",
+    opacity: 0.4,
+    marginLeft: "0.6in",
+    fontSize: "3em",
+    borderWidth: "10px"
+  }, 1500 );
+});
+</script>
+<h3>Question 12:Using jQuery find all the divisions with a name attribute that contains ‘tutorial’ and sets the background color yellow.</h3>
+<h3>Answer:</h3>
+<div  class="q12" name="tutorial-math"><p>math</p></div>
+<div  class="q12" name="Physicstutorial"><p>physic</p></div>
+<div  class="q12" name="Chemistry-tutorial"><p>chemistry</p></div>
+<br>
+<button  id="button12">Question 12</button>
+<script>
+    $('#button12').click(function(){
+$( "div.q12[name*='tutorial']" ).css( "background", "yellow" );
+});
+</script>
+<h3>Question 13: Scroll to the top of the page with jQuery.</h3>
+<h3>Answer:</h3>
+<button  id="button13">Question 13</button>
+<script>
+$("#button13").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+<h3>Question 14: Disable/enable the form submit button.Disable the submit button until the visitor has clicked a check box.</h3>
+<h3>Answer:</h3>
+<input id="accept" type="checkbox"/>I agree<br>
+<input id="submit" disabled="disabled" type="submit" />
+<script>
+$('#accept').click(function() {
+	if ($('#submit').is(':disabled')) {
+    	$('#submit').removeAttr('disabled');
+    } else {
+    	$('#submit').attr('disabled', 'disabled');
+    }
+});
+</script>
+<h3>Question 15: Blink text using jQuery.</h3>
+<h3>Answer:</h3>
+<p>Meo <span class="blink">Meo</span> Meo</p>
+
+<script>
+function blink_text() {
+    $('.blink').fadeOut(500);
+    $('.blink').fadeIn(500);
+}
+setInterval(blink_text, 1000);
+</script>
+ </body>
+</html>
