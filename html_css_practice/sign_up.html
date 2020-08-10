@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+    <style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+label.error {
+        display: inline-block;
+        color:red;
+        width: 200px;
+    }
 .topnav {
   overflow: hidden;
   background-color: #40538a;
@@ -40,8 +44,8 @@ body {
     width:400px
 }
 .container {
+    position:relation;
     width: 450px;
-    height: 525px;
     padding: 15px;
     padding-top:20px;
     background-color: #f3f3f3;
@@ -55,22 +59,27 @@ body {
     text-align:left
 }
 </style>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="js/sign_up.js"></script>
+
 </head>
 <body>
 
 <div class="topnav">
   <a href="#fotobook"><b>Fotobook</b></a>
-  <input class="search" name="a" type = "text" placeholder = "Search Photo / Album"> </input>
+  <input class="search" name="a" id="x" type = "text" placeholder = "Search Photo / Album"> </input>
   <a href="#login" class="right">Login</a>
 </div>
 <h1 style="color:#40538a; font-size: 45px;text-align:center; margin-top:40px">Fotobook Signup</h1>
 
-<form class="container" style="text-align:center">
+<form class="container" method="get" id="signupForm" action="" style="text-align:center">
     <label style="margin-right:225px"><b>First Name</b></label><br>
-        <input style="width:300px;height:35px;border-radius:7px;border:solid 1px;color:grey;padding-left:5px" name="Fname" type = "text" placeholder = "First Name" ><br>
+        <input style=" width:300px;height:35px;border-radius:7px;border:solid 1px;color:grey;padding-left:5px" id="Fname" name="Fname" type = "text" placeholder = "First Name"><br>
     <br>
     <label style="margin-right:225px"><b>Last Name</b></label><br>
-    <input style="width:300px;height:35px;border-radius:7px;border:solid 1px;color:grey;padding-left:5px"  name="Lname" type = "text" placeholder = "Last Name"><br>
+    <input style="width:300px;height:35px;border-radius:7px;border:solid 1px;color:grey;padding-left:5px" id="Lname"  name="Lname" type = "text" placeholder = "Last Name"><br>
     <br>
 
 
@@ -78,34 +87,30 @@ body {
     <select name="Country" id="Country" style="margin-right:40px">
         <option value="vi">Vi</option>
         <option value="en">En</option>
-    </select>
+    </select><br>
+    <br>
+    <div>
+    <label style="margin-right:105px" for='gender'><b>Please select your gender:</b></label><br>
+    <label><input type='radio' name='gender' value='male' />Male</label>
+    <label><input type='radio' name='gender' value='female' />Female</label>
+    </div>
+    <br>
+    <div>
+    <label style="margin-right:165px" for="hobby"><b>Interested Topics:</b></label><br>
+    <label><input type="checkbox" id="hobby1" name="hobby" value="Fashion">Fashion</label>
+    <label><input type="checkbox" id="hobby2" name="hobby" value="News">News</label>
+    <label><input type="checkbox" id="hobby3" name="hobby" value="Sport">Sport</label>
+    </div>
 
-
-
-    <p style="margin-right:105px"><b>Please select your gender:</b></p>
-    <input class="radio_button" type="radio" id="male" name="gender" value="male">
-    <label class="radio_button" for="male">Male</label>
-    <input class="radio_button" type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br>
-
-
-    <p style="margin-right:165px"><b>Interested Topics:</b></p>
-    <input type="checkbox" id="hobby1" name="hobby1" value="Fashion">
-    <label for="hobby1"> Fashion</label>
-    <input type="checkbox" id="hobby2" name="hobby2" value="News">
-    <label for="hobby2">News</label>
-    <input type="checkbox" id="hobby3" name="hobby3" value="Sport">
-    <label for="hobby3">Sport</label><br><br>
-
-
+    <br>
     <label style="margin-right:145px"><b>New Password Name</b></label><br>
-        <input style="width:300px;height:35px;border-radius:7px;border:solid 1px;color:grey;padding-left:5px;"  name="Pass" type = "password" placeholder = "Password"><br>
+        <input style="width:300px;height:35px;border-radius:7px;border:solid 1px;color:grey;padding-left:5px;" id="Pass" name="Pass" type = "password" placeholder = "Password"><br>
     <br>
     <label style="margin-right:125px"><b>Password Confirmation</b></label><br>
-        <input style="width:300px;height:35px;border-radius:7px;border:solid 1px;color:grey;padding-left:5px;" name="Pass_confirm" type = "password" placeholder = "Password"><br>
+        <input style="width:300px;height:35px;border-radius:7px;border:solid 1px;color:grey;padding-left:5px;" id="Pass_confirm" name="Pass_confirm" type = "password" placeholder = "Password"><br>
     <br>
     <div style="text-align: center;width:100">
-        <input style="background-color: #40538a;color:white;height:40px;width:80px;border-radius:7px;border:1px solid grey;" type="button" value="Signup">
+        <input style="background-color: #40538a;color:white;height:40px;width:80px;border-radius:7px;border:1px solid grey;" type="submit" value="Signup">
     </div>
 </form>
 
