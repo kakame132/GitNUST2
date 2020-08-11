@@ -9,4 +9,7 @@ $(document).ready(function(){
   $("#Continue3").click(function(){
     $("#Modal3").modal();
   });
+  $("#backtoTop").click(function() {
+    $(window).scrollTop(0);
+    });
 });
