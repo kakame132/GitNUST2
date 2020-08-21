@@ -1,5 +1,13 @@
 class Album < ApplicationRecord
-  belongs_to :users
+  belongs_to :user
+  has_and_belongs_to_many:photos
   validates :title, presence: true, length: {maximum: 140}
-  validates :description, presence: true, length: {maximum: 300}
+  validates :description,length: {maximum: 300}
+  before_save :ensure_description_has_value
+  private
+    def ensure_description_has_value
+      unless self.description.present?
+        self.description= "This is album of user has id " + self.user_id.to_s
+      end
+    end
 end

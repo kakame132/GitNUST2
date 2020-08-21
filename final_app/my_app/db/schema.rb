@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_19_050140) do
+ActiveRecord::Schema.define(version: 2020_08_21_023741) do
 
   create_table "albums", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "title"
@@ -20,7 +20,14 @@ ActiveRecord::Schema.define(version: 2020_08_19_050140) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
-    t.index ["user_id"], name: "fk_rails_964016e0e8"
+    t.index ["user_id"], name: "index_albums_on_user_id"
+  end
+
+  create_table "albums_photos", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.bigint "photo_id", null: false
+    t.bigint "album_id", null: false
+    t.index ["album_id"], name: "index_albums_photos_on_album_id"
+    t.index ["photo_id"], name: "index_albums_photos_on_photo_id"
   end
 
   create_table "photos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
@@ -29,7 +36,7 @@ ActiveRecord::Schema.define(version: 2020_08_19_050140) do
     t.datetime "publishDate"
     t.boolean "public", default: true
     t.bigint "user_id"
-    t.index ["user_id"], name: "fk_rails_c79d76afc0"
+    t.index ["user_id"], name: "index_photos_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
