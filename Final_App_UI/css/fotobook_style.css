@@ -1,0 +1,45 @@
+.selector-for-some-widget {
+ box-sizing: content-box;
+}
+div {
+  border: 2px red solid;
+}
+body{
+  font-family: Roboto;
+  font-style: normal;
+  font-width: bold
+}
+
+.grey_background{
+  background-color:#F8F8F8;
+}
+
+.fb_background{
+  background-color: #3C5999;
+}
+
+.fb_color{
+  color:#3C5999;
+}
+
+.rotate_pic1{
+  transform:rotate(4deg);
+}
+
+.rotate_pic2{
+  transform:rotate(10deg)
+}
+
+.square_photo{
+  width:200px;height:200px;
+}
+/*admin edit ph albums*/
+.photo_edit{
+  position:absolute;top:0;height:30px;color:white;width:200px;background-color:black;opacity:0.5;
+}
+.admin_photo_title{
+  height:30px;color:white;width:170px;overflow:hidden;
+}
+.admin_album_size{
+  width:170px;height:170px;
+}
