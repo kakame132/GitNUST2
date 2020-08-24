@@ -33,6 +33,10 @@ body{
 .square_photo{
   width:200px;height:200px;
 }
+.discover_album{
+  width:270px;height:270px;
+  overflow: hidden;
+}
 /*admin edit ph albums*/
 .photo_edit{
   position:absolute;top:0;height:30px;color:white;width:200px;background-color:black;opacity:0.5;

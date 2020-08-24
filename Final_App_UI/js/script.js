@@ -5,6 +5,8 @@ $(document).ready(function() {
     "click": function() {
       if (!btnPhoto.hasClass("chosen")) {
         btnPhoto.addClass("chosen")
+        $("#photo_tab").removeClass("d-none")
+        $("#album_tab").addClass("d-none")
         btnAlbum.removeClass("chosen")
       }
     }
@@ -13,6 +15,8 @@ $(document).ready(function() {
     "click": function() {
       if (!btnAlbum.hasClass("chosen")) {
         btnAlbum.addClass("chosen")
+        $("#photo_tab").addClass("d-none")
+        $("#album_tab").removeClass("d-none")
         btnPhoto.removeClass("chosen")
       }
     }
