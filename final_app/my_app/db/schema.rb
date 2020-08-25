@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_21_023741) do
+ActiveRecord::Schema.define(version: 2020_08_24_145004) do
 
   create_table "albums", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "title"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2020_08_21_023741) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
+    t.integer "likes"
     t.index ["user_id"], name: "index_albums_on_user_id"
   end
 
@@ -30,12 +31,31 @@ ActiveRecord::Schema.define(version: 2020_08_21_023741) do
     t.index ["photo_id"], name: "index_albums_photos_on_photo_id"
   end
 
+  create_table "follows", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.integer "follower_id"
+    t.integer "followed_user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "likeable_type"
+    t.bigint "likeable_id"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["likeable_type", "likeable_id"], name: "index_likes_on_likeable_type_and_likeable_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
   create_table "photos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.datetime "publishDate"
     t.boolean "public", default: true
     t.bigint "user_id"
+    t.string "url"
+    t.integer "likes"
     t.index ["user_id"], name: "index_photos_on_user_id"
   end
 
@@ -47,6 +67,7 @@ ActiveRecord::Schema.define(version: 2020_08_21_023741) do
     t.boolean "admin", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "avatar_url"
   end
 
   add_foreign_key "albums", "users"
