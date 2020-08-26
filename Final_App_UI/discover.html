@@ -9,56 +9,42 @@
 
 
     <title>feed_photo</title>
-    <style>
-        .selector-for-some-widget {
-         box-sizing: content-box;
-    }
-        div {
-          border: 2px red solid;
-        }
-        body{
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: bold
-        }
-
-    </style>
 
 </head>
 <body>
 <div class="container-fluid">
-  <div class="navbar row py-0" style="background-color: #3C5999 ">
+  <div class="navbar row py-0 fb_background">
           <div class="col-2 text-right">
-              <a class="text-white ml-1" style="font-size:20px" href="">Fotobook</a>
+              <a class="text-white ml-1 head_font" href="feed.html">Fotobook</a>
           </div>
           <div class="col-7">
-              <input class="rounded border-light" name="search_bar" style="width:600px; height:32px" id="search_bar" type="text" placeholder="Search Photo / Album"></input>
+              <input class="rounded border-light search" name="search_bar" id="search_bar" type="text" placeholder="Search Photo / Album"></input>
           </div>
           <div class="col-3 row pl-5 justify-content-between" >
             <div class="col-6">
               <a class="btn rounded-circle bg-white text-color border-0 px-2" href="my_profile.html">DK</a>
-              <a class="btn text-white border-0" href="my_profile.html">Duc Khanh</a>
+              <a class="btn text-white border-0" href="my_profile.html">Duc Bo </a>
             </div>
             <div class="col-6">
-              <a class="text-white pl-5" style="font-size:20px" href="">Login</a>
+              <a class="text-white pl-5 head_font" href="">Logout</a>
             </div>
           </div>
     </div>
-    <div class="row p-3 justify-content-center" style="background-color:#F8F8F8">
+    <div class="row p-3 justify-content-center grey_background">
       <div class="col-2 pt-4 align-items-center">
         <div class="row col ml-2">
-          <a class="btn text-secondary" href="feed.html" style="font-size:20px" >Feeds</a>
+          <a class="btn text-secondary head_font" href="feed.html">Feeds</a>
         </div>
         <div class="row col ml-2">
-          <a class="btn " href="#" style="font-size:20px;color:#3C5999" ><b>Discover</b></a>
+          <a class="btn head_font fb_color" href="#" ><b>Discover</b></a>
         </div>
       </div>
 
 
-      <div class="col-9 row d-flex justify-content-center" style="border-color:#3C5999;background-color:#FFFFFF">
+      <div class="col-9 row d-flex justify-content-center bg-white text-dark">
         <div class="col-12 d-flex justify-content-center">
         <div class="m-3 btn-group">
-          <button class="btn rounded-left border chosen" id="btn-photo" style="background-color:#3C5999;color:white">PHOTO</button>
+          <button class="btn rounded-left border chosen fb_background" id="btn-photo">PHOTO</button>
           <button class="btn rounded-right border" id="btn-album">ALBUM</button>
         </div> <br>
       </div>
@@ -93,7 +79,7 @@
                   Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                   Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                 </div>
-                <div class="row justify-content-between align-items-center" style="position:absolute;bottom:0">
+                <div class="row justify-content-between align-items-center position-absolute feed_footer">
                   <div class="col-auto text-color font-size love" style="padding-right:80px">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                   </div>
@@ -128,7 +114,7 @@
                     Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                     Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                   </div>
-                  <div class="row mt-3 justify-content-between align-items-center" style="position:absolute;bottom:0">
+                  <div class="row justify-content-between align-items-center position-absolute feed_footer">
                     <div class="col-auto text-color font-size love" style="padding-right:80px">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                     </div>
@@ -169,7 +155,7 @@
                   Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                   Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                 </div>
-                <div class="row justify-content-between align-items-center" style="position:absolute;bottom:0">
+                <div class="row justify-content-between align-items-center position-absolute feed_footer">
                   <div class="col-auto text-color font-size love" style="padding-right:80px">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                   </div>
@@ -204,7 +190,7 @@
                     Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                     Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                   </div>
-                  <div class="row mt-3 justify-content-between align-items-center" style="position:absolute;bottom:0">
+                  <div class="row justify-content-between align-items-center position-absolute feed_footer">
                     <div class="col-auto text-color font-size love" style="padding-right:80px">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                     </div>
@@ -244,7 +230,7 @@
                   Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                   Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                 </div>
-                <div class="row justify-content-between align-items-center" style="position:absolute;bottom:0">
+                <div class="row justify-content-between align-items-center position-absolute feed_footer">
                   <div class="col-auto text-color font-size love" style="padding-right:80px">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                   </div>
@@ -279,7 +265,7 @@
                     Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                     Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                   </div>
-                  <div class="row mt-3 justify-content-between align-items-center" style="position:absolute;bottom:0">
+                  <div class="row justify-content-between align-items-center position-absolute feed_footer">
                     <div class="col-auto text-color font-size love" style="padding-right:80px">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                     </div>
@@ -330,7 +316,7 @@
                   Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                   Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                 </div>
-                <div class="row justify-content-between align-items-center" style="position:absolute;bottom:0">
+                <div class="row justify-content-between align-items-center position-absolute feed_footer">
                   <div class="col-auto text-color font-size love" style="padding-right:80px">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                   </div>
@@ -370,7 +356,7 @@
                     Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                     Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                   </div>
-                  <div class="row justify-content-between align-items-center" style="position:absolute;bottom:0">
+                  <div class="row justify-content-between align-items-center position-absolute feed_footer">
                     <div class="col-auto text-color font-size love" style="padding-right:80px">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                     </div>
@@ -414,7 +400,7 @@
                   Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                   Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                 </div>
-                <div class="row justify-content-between align-items-center" style="position:absolute;bottom:0">
+                <div class="row justify-content-between align-items-center position-absolute feed_footer">
                   <div class="col-auto text-color font-size love" style="padding-right:80px">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                   </div>
@@ -454,7 +440,7 @@
                     Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                     Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                   </div>
-                  <div class="row justify-content-between align-items-center" style="position:absolute;bottom:0">
+                  <div class="row justify-content-between align-items-center position-absolute feed_footer">
                     <div class="col-auto text-color font-size love" style="padding-right:80px">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                     </div>
@@ -498,7 +484,7 @@
                   Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                   Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                 </div>
-                <div class="row justify-content-between align-items-center" style="position:absolute;bottom:0">
+                <div class="row justify-content-between align-items-center position-absolute feed_footer">
                   <div class="col-auto text-color font-size love" style="padding-right:80px">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                   </div>
@@ -538,7 +524,7 @@
                     Aliquam dictum mec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum.
                     Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.
                   </div>
-                  <div class="row justify-content-between align-items-center" style="position:absolute;bottom:0">
+                  <div class="row justify-content-between align-items-center position-absolute feed_footer">
                     <div class="col-auto text-color font-size love" style="padding-right:80px">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="rgb(60, 90, 154)"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 01-.69 0zm0 0L8 14.25l.345.666.002-.001.006-.003.018-.01a7.643 7.643 0 00.31-.17 22.08 22.08 0 003.433-2.414C13.956 10.731 16 8.35 16 5.5 16 2.836 13.914 1 11.75 1 10.203 1 8.847 1.802 8 3.02 7.153 1.802 5.797 1 4.25 1 2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 003.744 2.584l.018.01.006.003h.002z"></path></svg><span>123</span>
                     </div>
@@ -563,7 +549,8 @@
           </div>
         </div>
       </div>
-
+      <div class="col">
+      </div>
     </div>
 
 

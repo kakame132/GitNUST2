@@ -5,29 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/fotobook_style.css">
 
     <title>public_profile</title>
-    <style>
-        .selector-for-some-widget {
-         box-sizing: content-box;
-    }
-        div {
-          border: 2px red solid;
-        }
-        body{
-          font-family: Roboto;
-          font-style: normal;
-          font-width: bold
-        }
 
-    </style>
 
 </head>
 <body>
 <div class="container-fluid">
-  <div class="navbar row py-1" style="background-color: #3C5999 ">
+  <div class="navbar row py-0" style="background-color: #3C5999 ">
           <div class="col-2 text-right">
-              <a class="text-white ml-2" style="font-size:20px" href="">Fotobook</a>
+              <a class="text-white ml-2" style="font-size:20px" href="feed.html">Fotobook</a>
           </div>
           <div class="col-7">
               <input class="rounded border-light" name="search_bar" style="width:600px; height:32px" id="search_bar" type="text" placeholder="Search Photo / Album"></input>
@@ -48,7 +36,7 @@
           <a class="btn text-secondary" href="feed.html" style="font-size:20px" >Feeds</a>
         </div>
         <div class="row col ml-2">
-          <a class="btn " href="#" style="font-size:20px;color:#3C5999" ><b>Discover</b></a>
+          <a class="btn text-secondary" href="discover.html" style="font-size:20px" >Discover</a>
         </div>
       </div>
       <div class="col-9 row d-flex justify-content-center" style="background-color:#FFFFFF">
@@ -59,7 +47,7 @@
             </div>
             <div class="col-9">
               <div class="row" style="height:40px;">
-                <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
               </div>
               <div class="row mt-1">
                 <h1 name="user-name" class="font-width-bold">Tran Duc Bo</h1>
@@ -467,7 +455,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -488,7 +476,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -509,7 +497,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -530,93 +518,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
-                </div>
-              </div>
-            </div>
-            <div class="row mx-3 my-1">
-              <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
-                <div class="row mt-3 d-flex justify-content-center">
-                  <img src="photo/momo.png" alt="" class="img-fluid rounded-circle" style="width:150px;height:150px">
-                </div>
-                <div class="my-1 justify-content-center row col-12">
-                  <p class="font-weight-bold mb-0">Tran Duc Bo</p>
-                </div>
-                <div class="row justify-content-center text-primary col-12">
-                  <div class="col">
-                    <div class="row justify-content-center font-weight-bold font-size-lg">22</div>
-                    <div class="row justify-content-center font-size">PHOTOS</div>
-                  </div>
-                  <div class="col">
-                    <div class="row justify-content-center font-weight-bold font-size-lg">105</div>
-                    <div class="row justify-content-center font-size">ALBUMS</div>
-                  </div>
-                </div>
-                <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
-                </div>
-              </div>
-              <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
-                <div class="row mt-3 d-flex justify-content-center">
-                  <img src="photo/momo.png" alt="" class="img-fluid rounded-circle" style="width:150px;height:150px">
-                </div>
-                <div class="my-1 justify-content-center row col-12">
-                  <p class="font-weight-bold mb-0">Tran Duc Bo</p>
-                </div>
-                <div class="row justify-content-center text-primary col-12">
-                  <div class="col">
-                    <div class="row justify-content-center font-weight-bold font-size-lg">22</div>
-                    <div class="row justify-content-center font-size">PHOTOS</div>
-                  </div>
-                  <div class="col">
-                    <div class="row justify-content-center font-weight-bold font-size-lg">105</div>
-                    <div class="row justify-content-center font-size">ALBUMS</div>
-                  </div>
-                </div>
-                <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
-                </div>
-              </div>
-              <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
-                <div class="row mt-3 d-flex justify-content-center">
-                  <img src="photo/momo.png" alt="" class="img-fluid rounded-circle" style="width:150px;height:150px">
-                </div>
-                <div class="my-1 justify-content-center row col-12">
-                  <p class="font-weight-bold mb-0">Tran Duc Bo</p>
-                </div>
-                <div class="row justify-content-center text-primary col-12">
-                  <div class="col">
-                    <div class="row justify-content-center font-weight-bold font-size-lg">22</div>
-                    <div class="row justify-content-center font-size">PHOTOS</div>
-                  </div>
-                  <div class="col">
-                    <div class="row justify-content-center font-weight-bold font-size-lg">105</div>
-                    <div class="row justify-content-center font-size">ALBUMS</div>
-                  </div>
-                </div>
-                <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
-                </div>
-              </div>
-              <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
-                <div class="row mt-3 d-flex justify-content-center">
-                  <img src="photo/momo.png" alt="" class="img-fluid rounded-circle" style="width:150px;height:150px">
-                </div>
-                <div class="my-1 justify-content-center row col-12">
-                  <p class="font-weight-bold mb-0">Tran Duc Bo</p>
-                </div>
-                <div class="row justify-content-center text-primary col-12">
-                  <div class="col">
-                    <div class="row justify-content-center font-weight-bold font-size-lg">22</div>
-                    <div class="row justify-content-center font-size">PHOTOS</div>
-                  </div>
-                  <div class="col">
-                    <div class="row justify-content-center font-weight-bold font-size-lg">105</div>
-                    <div class="row justify-content-center font-size">ALBUMS</div>
-                  </div>
-                </div>
-                <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
             </div>
@@ -639,7 +541,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -660,7 +562,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -681,7 +583,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -702,7 +604,93 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-3 my-1">
+              <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
+                <div class="row mt-3 d-flex justify-content-center">
+                  <img src="photo/momo.png" alt="" class="img-fluid rounded-circle" style="width:150px;height:150px">
+                </div>
+                <div class="my-1 justify-content-center row col-12">
+                  <p class="font-weight-bold mb-0">Tran Duc Bo</p>
+                </div>
+                <div class="row justify-content-center text-primary col-12">
+                  <div class="col">
+                    <div class="row justify-content-center font-weight-bold font-size-lg">22</div>
+                    <div class="row justify-content-center font-size">PHOTOS</div>
+                  </div>
+                  <div class="col">
+                    <div class="row justify-content-center font-weight-bold font-size-lg">105</div>
+                    <div class="row justify-content-center font-size">ALBUMS</div>
+                  </div>
+                </div>
+                <div class="row col justify-content-center mt-2 mb-3">
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
+                </div>
+              </div>
+              <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
+                <div class="row mt-3 d-flex justify-content-center">
+                  <img src="photo/momo.png" alt="" class="img-fluid rounded-circle" style="width:150px;height:150px">
+                </div>
+                <div class="my-1 justify-content-center row col-12">
+                  <p class="font-weight-bold mb-0">Tran Duc Bo</p>
+                </div>
+                <div class="row justify-content-center text-primary col-12">
+                  <div class="col">
+                    <div class="row justify-content-center font-weight-bold font-size-lg">22</div>
+                    <div class="row justify-content-center font-size">PHOTOS</div>
+                  </div>
+                  <div class="col">
+                    <div class="row justify-content-center font-weight-bold font-size-lg">105</div>
+                    <div class="row justify-content-center font-size">ALBUMS</div>
+                  </div>
+                </div>
+                <div class="row col justify-content-center mt-2 mb-3">
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
+                </div>
+              </div>
+              <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
+                <div class="row mt-3 d-flex justify-content-center">
+                  <img src="photo/momo.png" alt="" class="img-fluid rounded-circle" style="width:150px;height:150px">
+                </div>
+                <div class="my-1 justify-content-center row col-12">
+                  <p class="font-weight-bold mb-0">Tran Duc Bo</p>
+                </div>
+                <div class="row justify-content-center text-primary col-12">
+                  <div class="col">
+                    <div class="row justify-content-center font-weight-bold font-size-lg">22</div>
+                    <div class="row justify-content-center font-size">PHOTOS</div>
+                  </div>
+                  <div class="col">
+                    <div class="row justify-content-center font-weight-bold font-size-lg">105</div>
+                    <div class="row justify-content-center font-size">ALBUMS</div>
+                  </div>
+                </div>
+                <div class="row col justify-content-center mt-2 mb-3">
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
+                </div>
+              </div>
+              <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
+                <div class="row mt-3 d-flex justify-content-center">
+                  <img src="photo/momo.png" alt="" class="img-fluid rounded-circle" style="width:150px;height:150px">
+                </div>
+                <div class="my-1 justify-content-center row col-12">
+                  <p class="font-weight-bold mb-0">Tran Duc Bo</p>
+                </div>
+                <div class="row justify-content-center text-primary col-12">
+                  <div class="col">
+                    <div class="row justify-content-center font-weight-bold font-size-lg">22</div>
+                    <div class="row justify-content-center font-size">PHOTOS</div>
+                  </div>
+                  <div class="col">
+                    <div class="row justify-content-center font-weight-bold font-size-lg">105</div>
+                    <div class="row justify-content-center font-size">ALBUMS</div>
+                  </div>
+                </div>
+                <div class="row col justify-content-center mt-2 mb-3">
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
             </div>
@@ -729,7 +717,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -750,7 +738,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -771,7 +759,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -792,7 +780,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
             </div>
@@ -815,7 +803,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -836,7 +824,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -857,7 +845,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
               <div class="col row shadow rounded justify-content-center mx-2" style="background-color:#F8F8F8">
@@ -878,7 +866,7 @@
                   </div>
                 </div>
                 <div class="row col justify-content-center mt-2 mb-3">
-                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">unfollow</button>
+                  <button type="button" name="follow" class="btn follow rounded-pill py-0 my-profile" style="border:3px solid orange;color:orange">follow</button>
                 </div>
               </div>
             </div>
@@ -895,6 +883,8 @@
 
 
 
+      </div>
+      <div class="col">
       </div>
     </div>
   </div>

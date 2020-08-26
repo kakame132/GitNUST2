@@ -5,60 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/fotobook_style.css">
+
 
     <title>edit_photo</title>
-    <style>
-        .selector-for-some-widget {
-         box-sizing: content-box;
-    }
-        div {
-          border: 2px red solid;
-        }
-        body{
-          font-family: Roboto;
-          font-style: normal;
-          font-width: bold
-        }
-        .close {
-          position: absolute;
-          top: 0;
-          right: 0;
-          }
 
-    </style>
 
 </head>
 <body>
   <div class="container-fluid">
-    <div class="navbar row py-0" style="background-color: #3C5999 ">
+    <div class="navbar row py-0 fb_background">
             <div class="col-2 text-right">
-                <a class="text-white ml-2" style="font-size:20px" href="">Fotobook</a>
+                <a class="text-white ml-1 head_font" href="feed.html">Fotobook</a>
             </div>
             <div class="col-7">
-                <input class="rounded border-light" name="search_bar" style="width:600px; height:32px" id="search_bar" type="text" placeholder="Search Photo / Album"></input>
+                <input class="rounded border-light search" name="search_bar" id="search_bar" type="text" placeholder="Search Photo / Album"></input>
             </div>
-            <div class="col-3 row justify-content-between" >
+            <div class="col-3 row pl-5 justify-content-between" >
               <div class="col-6">
-                <a class="btn rounded-circle bg-white text-color border-0 px-2" href="my_profile.html">DB</a>
-                <a class="btn text-white border-0" href="my_profile.html">Duc Bo</a>
+                <a class="btn rounded-circle bg-white text-color border-0 px-2" href="my_profile.html">DK</a>
+                <a class="btn text-white border-0" href="my_profile.html">Duc Bo </a>
               </div>
               <div class="col-6">
-                <a class="text-white pl-5" style="font-size:20px" href="">Login</a>
+                <a class="text-white pl-5 head_font" href="">Logout</a>
               </div>
             </div>
       </div>
-      <div class="row p-3 justify-content-center" style="background-color:#F8F8F8">
-        <div class="col-2 pt-4 align-items-center">
+      <div class="row p-3 justify-content-center grey_background">
+        <div class="col-2  pt-4 align-items-center">
           <div class="row col ml-2">
-            <a class="btn text-secondary" href="feed.html" style="font-size:20px" >Feeds</a>
+            <a class="btn text-secondary head_font" href="feed.html" >Feeds</a>
           </div>
           <div class="row col ml-2">
-            <a class="btn text-secondary" href="#" style="font-size:20px" >Discover</a>
+            <a class="btn text-secondary head_font" href="#" >Discover</a>
           </div>
         </div>
       <div class="col-9 p-3">
         <div class="col bg-white pb-3 mb-5">
-          <div class="font-weight-bold border-bottom py-4" style="font-size:20px;">Edit Photo</div>
+          <div class="font-weight-bold border-bottom py-4 head_font">Edit Photo</div>
           <div class="row">
             <div class="col px-4">
               <div class="form-group-vertical mt-4">
@@ -82,8 +66,8 @@
           </div>
           <div class="row mx-2 my-3">
             <div class="col-2 px-0 d-flex justify-content-center">
-              <img src="photo/batman.jpg" alt="" class="img-fluid" style="width:220px;height:220px">
-              <img class="close" src="photo/close.jpg"  style="width:19px;height:19px"/>
+              <img src="photo/batman.jpg" alt="" class="img-fluid square_edit_photo">
+              <img class="close" src="photo/close.jpg"/>
             </div>
           </div>
           <div class="row mx-2 my-5">

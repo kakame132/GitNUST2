@@ -70,18 +70,15 @@ $(document).ready(function() {
   })
   $("#btn-photo").on({
     "click": function() {
-      $(this).css("background-color","#3C5999")
-      $(this).css("color","white")
-      $("#btn-album").css("background-color","white")
-      $("#btn-album").css("color","black")
+      $(this).addClass("fb_background")
+      $("#btn-album").removeClass("fb_background")
+
     }
   })
   $("#btn-album").on({
     "click": function() {
-      $(this).css("background-color","#3C5999")
-      $(this).css("color","white")
-      $("#btn-photo").css("background-color","white")
-      $("#btn-photo").css("color","black")
+      $(this).addClass("fb_background")
+      $("#btn-photo").removeClass("fb_background")
     }
   })
 });
