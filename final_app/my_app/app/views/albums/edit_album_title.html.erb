@@ -1,0 +1,6 @@
+
+<%= form_for @album do |f| %>
+  Old title : <%=  @album.title%><br>
+  <%= f.text_field :title %>
+  <%= submit_tag "Submit" %>
+<% end %>

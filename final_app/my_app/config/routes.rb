@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   resource :photos
   resource :albums
  end
+ resources :photos ,except: ['show']
+ resources :albums ,except: ['show']
  namespace :admin do
    resources :users, shallow: true
  end
