@@ -7,5 +7,6 @@ class AlbumsController < ApplicationController
     @album=Album.find(params[:id])
     @title=params.require(:album).permit(:title)
     @album.update(title: @title["title"])
+    render 'edit_album_title'
   end
 end
