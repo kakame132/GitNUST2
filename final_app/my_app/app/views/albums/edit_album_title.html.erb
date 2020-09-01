@@ -6,6 +6,8 @@
 
 <% if  @album.errors.any? %>
   <% flash.now[:alert]=@album.errors.full_messages.first %>
+<% elsif @c != 0 %>
+  <% flash.now[:success]="update success" %>
 <% end %>
 
 
